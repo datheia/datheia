@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+    background-color: rgb(27, 26, 26);
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.container {
+  background: radial-gradient(circle at 100% 100%, #202020 0, #202020 17px, transparent 17px) 0% 0%/20px 20px no-repeat,
+            radial-gradient(circle at 0 100%, #202020 0, #202020 17px, transparent 17px) 100% 0%/20px 20px no-repeat,
+            radial-gradient(circle at 100% 0, #202020 0, #202020 17px, transparent 17px) 0% 100%/20px 20px no-repeat,
+            radial-gradient(circle at 0 0, #202020 0, #202020 17px, transparent 17px) 100% 100%/20px 20px no-repeat,
+            linear-gradient(#202020, #202020) 50% 50%/calc(100% - 6px) calc(100% - 40px) no-repeat,
+            linear-gradient(#202020, #202020) 50% 50%/calc(100% - 40px) calc(100% - 6px) no-repeat,
+            linear-gradient(339deg, rgba(223,77,189,0.93) 0%, rgba(115,40,98,0.35) 38.995%, rgba(255,255,255,0.65) 68.132%, transparent 86.082%, rgba(206,134,190,0.23) 100%),
+            linear-gradient(311deg, #543b4e 0%, #b4abb2 6.843%, #fb26ca 100%);
+  border-radius: 20px;
+  padding: 24px;
+  box-sizing: content-box;
+  border: 2px solid rgb(34, 34, 34); 
+  color: rgb(255, 255, 255);
+  height: auto;
+  left: 50%;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  text-align: center;
+}
+
+.container::before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 15px;
+  position: absolute;
+  top: 8px;
+  left: 13px;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-size: 9px;
+}
+p.purple {
+  color: #da3cb5
+}
+
+.discord {
+  cursor: pointer;
+  color: #7289da;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  margin-top: 20px;
+}
+.discord:hover {
+  color: #fff;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
